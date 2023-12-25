@@ -31,3 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//COPIAR EMAIL
+function copiarCorreo() {
+    var inputTemp = document.createElement('input');
+    inputTemp.value = 'adalbertocortesxd@gmail.com';
+    document.body.appendChild(inputTemp);
+    inputTemp.select();
+    document.execCommand('copy');
+}
+
