@@ -32,17 +32,94 @@ body.light-mode {
     background-color: #243f4c;
     outline: 0;
 }
+.light-mode .mode-button:hover{
+    background-color: #6b7f92;
+}
 .light-mode .img_profile img {
     border: 5px solid #000000;  
+}
+.light-mode .btn-header button{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.light-mode .btn-curriculum:hover{
+    background-color: #4f8cbe;
+}
+.light-mode .btn-github:hover{
+    background-color: #F1502F;
+    
+}
+.light-mode .btn-linkedin:hover{
+    background-color: #1a79d2;
 }
 .light-mode .presentacion .miDescripcion{
     color: #000000;
     opacity: 1;
 }
-.light-mode .proyectos .img_proyectos{
-    border: 1px solid #212F3C;
+.light-mode .presentacion{
+    background-color: #fff;
 }
-
+.light-mode .miDescripcion{
+    background: linear-gradient(to right, #3b82f6, #ffffff);
+}
+.light-mode section, .light-mode .presentacion{
+    background-color: #eceff1;
+}
+.light-mode header{
+    color: #000000;
+    text-shadow: 2px 0 0 #935512;
+}
+.light-mode .opacity-60{
+    opacity: 1;
+}
+.light-mode .text-base-certificados{
+    color: #263240;
+}
+.light-mode .description_proyectos{
+    background-color: #fff;
+}
+.light-mode .description_proyectos:hover{
+    box-shadow: 0 0 5px #0073ff;
+    background-color: #e4e4e4;
+}
+.light-mode .code-github{
+    background-color: #fff;
+}
+.light-mode .code-github:hover{
+    background-color: #f8f8f8;
+    box-shadow: 0 0 2px #457fb2;
+    border: 2px solid #88898b;
+}
+.light-mode .btn-copiar{
+    background-color: #2570b7;
+}
+.light-mode form{
+    background-color: #fff;
+}
+.light-mode form label{
+    color: #000;
+}
+.light-mode form input{
+    background-color: #eceff1;
+    border: 2px solid #000000;
+}
+.light-mode form textarea{
+    background-color: #eceff1;
+    border: 2px solid #000000;
+    color: #000;
+}
+.light-mode input::placeholder,.light-mode textarea::placeholder {
+    color:#000;
+    opacity: .9;
+}
+.light-mode input:valid, .light-mode textarea:valid{
+    color: #db8617;
+    font-weight: bold;
+}
+.light-mode form button{
+    background-color: #eceff1;
+}
 
 .mode {
     text-align: right; /* PUEDO NO SERVIR */
@@ -164,6 +241,10 @@ h1{
     justify-content: start;
     /* height: 40px; */
 }
+.btn-header a{
+    display: flex;
+    text-decoration: none;
+}
 .btn-header button {
     color: #ffffff;
     background-color: #0062ff;
@@ -171,11 +252,12 @@ h1{
     font-weight: bold;
     border-radius: 5px;
     padding: 5px;
-    width: 150px; 
+    width: 140px; 
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-right: 20px;
+    font-size: 18px;
 }
 .btn-header button:hover{
     background-color: #11479c;
@@ -202,10 +284,10 @@ hr{
 }
 @keyframes expand {
     0% {
-        width: 0; /* Comienza sin ancho */
+        width: 0; 
     }
     100% {
-        width: 100%; /* Vuelve a cero al final de la animación */
+        width: 100%; 
     }
 }
 section, .presentacion{
@@ -388,7 +470,7 @@ header{
 }
 .btn_proyecto a{
 }
-.grafo_csharp{
+.code-github{
     color: #00b5e8;
     background-color: #142336;
     border-radius: 10%;
@@ -399,16 +481,16 @@ header{
     text-decoration: none;
     transition: box-shadow 0.3s;
 }
-.grafo_csharp:hover{
+.code-github:hover{
     background-color: #1a3257;
     box-shadow: 0 0 2px #ffffff;
 }
-.grafo_csharp span{
+.code-github span{
     flex: 1;
     font-size: 20px;
     margin: 12px;
 }
-.grafo_csharp svg{
+.code-github svg{
     flex: 1;
     padding: 5px;
     width: 40px;
